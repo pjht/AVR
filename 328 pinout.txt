@@ -1,0 +1,9 @@
+PORTD is digital 0-7, physical pins 2-6 and 11-13.
+PORTB is digital 8-13 and crystal pins, physical 14-19 and 9-10.
+PORTC is analog 0-5, physical 23-28.
+Always connect pins 20 and 21 to +5v and 22 to ground.
+For best stability, connect 7 to +5v and 8 to ground.
+Pin 1 is active-low reset. Connect this pin to +5v with a 1k pullup resistor. 	
+Serial interface is on pins 2(RX) and 3(TX), digital 0 and 1, or PORTD[0,1].
+I2C is on pins 28(SCL) and 27(SDA), analog 4 and 5, or PORTC[4,5].
+SPI is on pins 16(/SS), 17(MOSI), 18(MISO), and 19(SCK), digital 9-13, or PORTC[2-5].
